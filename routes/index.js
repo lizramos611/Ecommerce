@@ -3,7 +3,8 @@ const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
 
-router.unsubscribe((req, res) => {
-    res.send(<p>Wrong Route!</p>)
+router.use((req, res) => {
+  res.send("<h1>Wrong Route!</h1>")
 });
+
 module.exports = router;
