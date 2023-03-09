@@ -5,7 +5,7 @@ const sequalize = require('../config/connection.js');
 
 class Tag extends Model{}
 
-
+//sql for tags
 Tag.init ({
     id: {
         type: DataTypes.INTEGER,
@@ -23,5 +23,5 @@ Tag.init ({
     underscored: true,
     modelName: 'tag'
 }})
-
+//exporting for tags
 module.exports = Tag;
